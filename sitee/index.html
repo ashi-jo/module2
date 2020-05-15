@@ -28,14 +28,31 @@
      text-align: center;
      float: center;
    }
+   .content
+   {
+     float: left;
+     width: 33.33%
+   }
+   .box::after
+   {
+     content: "";
+     display: table;
+     clear: both;
+   }
   </style>
 
   <body>
     <h1> Our Menu <h1>
 
     <div id="box">
-      <div id="content">
+      <div class="content">
         Hi,here goes some random text.. dhuchndkmfemf
+      </div>
+      <div class = "content">
+        Hi, here goes nothing .. literally
+      </div>
+      <div class = "content">
+        Coloumn 3 hehe
       </div>
     </div>
 
