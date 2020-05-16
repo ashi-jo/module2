@@ -25,6 +25,10 @@
      margin-top: 30px;
    }
 
+   .row
+   {
+     width= 100%;
+   }
    p
    {
      background-color: grey;
@@ -49,7 +53,7 @@
      margin-bottom: 10px;
    }
 
-   #p1
+   #p3
    {
      width: 50px;
      height: 25px;
@@ -60,24 +64,28 @@
    @media (min-width: 1200px)
    {
     .col-lg-3
-    position: relative;
-    border: 1px solid black;
-    width: 33.33%;
-    float:left;
+    {
+      border: 1px solid black;
+      width: 33.33%;
+      float:left;
+    }
    }
 
    @media (min-width:992px) and (max-width: 1199px)
    {
      .col-md-6
-     float: left;
-     border: 1px solid black;
-     width: 50%;
-     position: relative;
+     {
+       float: left;
+       border: 1px solid black;
+       width: 50%;
+     }
    }
   </style>
 
   <body>
     <h1> Our Menu <h1>
+
+    <div class="row">
 
     <div class="col-lg-3 col-md-6">
       <p id="p1">Ice-cream</p>
@@ -92,6 +100,8 @@
     <div class="col-lg-3 col-md-6">
       <p id="p3">Cake</p>
       <p>Consider this some random list of flavours of cake. Cake is delicieous.</p>
+    </div>
+
     </div>
 
 
