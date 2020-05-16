@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu</title>
   </head>
   <style>
@@ -12,32 +13,47 @@
      padding: 0;
    }
 
+   body
+   {
+     font-family: sans-serif;
+   }
+
    h1
    {
      text-align: center;
-     font-family: sans-serif;
      margin-bottom: 30px;
      margin-top: 30px;
    }
-   #box
+
+   p
    {
      background-color: grey;
-     padding: 5px;
+     padding: 2px;
      border: 5px solid black;
      width: 50%;
-     text-align: center;
-     float: center;
+     margin-left: auto;
+     margin-right: auto;
    }
-   .content
+
+   #box
    {
+     width: 100%
+   }
+
+   @media (min-width: 1200px)
+   {
+    .col-lg-3
+    float: left;
+    border: 1px solid black;
+    width: 25%
+   }
+
+   @media (min-width:992px) and (max-width: 1199px)
+   {
+     .col-md-6
      float: left;
-     width: 33.33%
-   }
-   .box::after
-   {
-     content: "";
-     display: table;
-     clear: both;
+     border: 1px solid black;
+     width: 50%
    }
   </style>
 
@@ -45,14 +61,14 @@
     <h1> Our Menu <h1>
 
     <div id="box">
-      <div class="content">
-        Hi,here goes some random text.. dhuchndkmfemf
+      <div class="col-lg-3 col-md-6">
+        <p>Hi,here goes some random text.. dhuchndkmfemf </p>
       </div>
-      <div class = "content">
-        Hi, here goes nothing .. literally
+      <div class = "col-lg-3 col-md-6">
+        <p>Hi, here goes nothing .. literally</p>
       </div>
-      <div class = "content">
-        Coloumn 3 hehe
+      <div class = "col-lg-3 col-md-6">
+        <p>Coloumn 3 hehe</p>
       </div>
     </div>
 
