@@ -30,21 +30,40 @@
      background-color: grey;
      padding: 2px;
      border: 2px solid black;
-     width: 50%;
      margin-bottom: 15px;
    }
 
-   #box
+   #p1
    {
-     width: 100%
+     width: 50px;
+     height: 25px;
+     background-color: pink;
+     margin-bottom: 10px;
+   }
+
+   #p2
+   {
+     width: 50px;
+     height: 25px;
+     background-color: red;
+     margin-bottom: 10px;
+   }
+
+   #p1
+   {
+     width: 50px;
+     height: 25px;
+     background-color: yellow;
+     margin-bottom: 10px;
    }
 
    @media (min-width: 1200px)
    {
     .col-lg-3
-    float: left;
+    position: relative;
     border: 1px solid black;
-    width: 33.33%
+    width: 33.33%;
+    float:left;
    }
 
    @media (min-width:992px) and (max-width: 1199px)
@@ -52,24 +71,29 @@
      .col-md-6
      float: left;
      border: 1px solid black;
-     width: 50%
+     width: 50%;
+     position: relative;
    }
   </style>
 
   <body>
     <h1> Our Menu <h1>
 
-    <div id="box">
-      <div class="col-lg-3 col-md-6">
-        <p>Hi,here goes some random text.. dhuchndkmfemf </p>
-      </div>
-      <div class = "col-lg-3 col-md-6">
-        <p>Hi, here goes nothing .. literally</p>
-      </div>
-      <div class = "col-lg-3 col-md-6">
-        <p>Coloumn 3 hehe</p>
-      </div>
+    <div class="col-lg-3 col-md-6">
+      <p id="p1">Ice-cream</p>
+      <p>Consider this some random list of flavours of ice cream. Ice-cream is delicieous.</p>
     </div>
+
+    <div class="col-lg-3 col-md-6">
+      <p id="p2">Waffles</p>
+      <p>Consider this some random list of types of waffles. Waffles are delicieous.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <p id="p3">Cake</p>
+      <p>Consider this some random list of flavours of cake. Cake is delicieous.</p>
+    </div>
+
 
   </body>
 </html>
